@@ -7,50 +7,64 @@
     body {
       font-family: sans-serif;
       margin: 40px;
+      line-height: 2;
     }
-    h1, h2 {
+    .date-box {
+      background: #f0f0f0;
+      border: 1px solid #777;
+      padding: 15px;
+      border-radius: 8px;
       text-align: center;
+      font-size: 18px;
+      margin-bottom: 25px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 30px;
     }
     th, td {
-      border: 1px solid #333;
-      padding: 8px;
+      border: 1px solid #444;
+      padding: 10px;
       text-align: center;
+    }
+    th {
+      background: #e0e0e0;
+    }
+    a {
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      text-decoration: none;
+      color: #0066cc;
     }
   </style>
 </head>
 
 <body>
-  <h1>لیست غائبین</h1>
-  <h2>پایه دهم - شبکه</h2>
 
+  <h1 style="text-align:center;">لیست غائبین پایه دهم شبکه</h1>
+
+  <!-- 📌 بخش تاریخ در بالا -->
+  <div class="date-box">
+    شنبه مورخه ۱۴۰۴/۰۸/۲۵
+  </div>
+
+  <!-- 📌 جدول غائبین زیر تاریخ -->
   <table>
     <thead>
       <tr>
         <th>شماره</th>
-        <th>کد / نام</th>
+        <th>نام / کد</th>
         <th>توضیحات</th>
       </tr>
     </thead>
 
     <tbody>
-      <!-- ردیف تاریخ در بالا -->
-      <tr>
-        <td colspan="3">تاریخ: ۱۴۰۴/۰۸/۲۵ - روز شنبه</td>
-      </tr>
-
-      <!-- نفر اول -->
       <tr>
         <td>۱</td>
         <td>دانش‌آموز ۱</td>
         <td>غیبت غیرموجه</td>
       </tr>
-
-      <!-- نفر دوم -->
       <tr>
         <td>۲</td>
         <td>دانش‌آموز ۲</td>
@@ -59,8 +73,7 @@
     </tbody>
   </table>
 
-  <p style="text-align:center; margin-top:20px;">
-    <a href="index.html">بازگشت به انتخاب کلاس‌های پایه دهم</a>
-  </p>
+  <a href="index.html">بازگشت به انتخاب کلاس‌ها</a>
+
 </body>
 </html>
